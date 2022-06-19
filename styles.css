@@ -26,7 +26,7 @@ body {
   font-family: var(--Font);
   line-height: 1.3;
   height: 100%;
-  background-image: url("/bg-intro-desktop-image.png");
+  background-image: url("./bg-intro-desktop-image.png");
   background-color: var(--red);
   background-size: auto;
   object-fit: cover;
@@ -34,6 +34,11 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
 
 /* BUTTONS */
 
@@ -78,9 +83,7 @@ body {
   font-size: 14px;
 }
 
-.form-reg-form span {
-  color: darkred;
-}
+
 
 .form {
   max-width: var(--fixed-width);
@@ -170,7 +173,7 @@ body {
 
 @media screen and (max-width: 600px) {
     body {
-        background-image: url("/bg-intro-mobile-image.png");
+        background-image: url("./bg-intro-mobile-image.png");
         background-color: var(--red);
     }
   .first-section h2 {
