@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayishblue: hsl(246, 25%, 77%);
+  --fixed-width: 600px;
+  --borderRadius: 0.5rem;
+  --Font: "Poppins", sans-serif;
+}
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: var(--Font);
+  line-height: 1.3;
+  height: 100%;
+  background-image: url("/bg-intro-desktop-image.png");
+  background-color: var(--red);
+  background-size: auto;
+  object-fit: cover;
+  overflow-y: scroll;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* BUTTONS */
+
+.btn {
+  cursor: pointer;
+  color: white;
+  border: transparent;
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  display: inline-block;
+}
+
+.try-it-free {
+  width: 100%;
+  background: var(--blue);
+  box-shadow: 1px 5px 10px #888888;
+}
+
+.try-it-free:hover {
+  background: darkslateblue;
+}
+
+.try-it-free span {
+  color: #f0f8ff;
+}
+
+.claim {
+  background: var(--green);
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+.claim:hover {
+  background: lightgreen;
+}
+
+/* FORM */
+
+.form-reg-form p {
+  margin-top: 15px;
+  color: grey;
+  font-size: 14px;
+}
+
+.form-reg-form span {
+  color: darkred;
+}
+
+.form {
+  max-width: var(--fixed-width);
+  background: white;
+  border-radius: var(--borderRadius);
+  padding: 1.8rem 2.5rem;
+  margin: 1.5rem auto;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.6rem 0.6rem;
+  border-radius: 0.25rem;
+  border: 1px solid;
+}
+
+.form-row {
+  margin-bottom: 0.5rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: auto;
+  width: 85vw;
+  align-items: center;
+  height: 100vh;
+}
+
+.first-section h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.first-section p {
+  color: #f0f8ff;
+  font-weight: 400;
+}
+
+.second-section {
+  margin-top: 1.5rem;
+}
+
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .first-section h2 {
+    text-align: center;
+  }
+
+  .first-section p {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .second-section {
+    margin: auto;
+    width: 103%;
+  }
+
+  .try-it-free {
+    width: 100%;
+  }
+
+  .form p {
+    text-align: center;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first-section h2 {
+    font-size: 2rem;
+  }
+
+  .first-section p {
+    font-size: 1.4rem;
+  }
+}
